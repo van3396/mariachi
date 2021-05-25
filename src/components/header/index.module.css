@@ -14,7 +14,7 @@
   color: black;
 }
 .chosenLang {
-  color: red;
+  color: red!important;
 }
 
 .title {

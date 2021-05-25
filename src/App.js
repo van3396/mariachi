@@ -1,14 +1,10 @@
-import React, { useState } from "react";
-import { Container, Form } from "react-bootstrap";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import React from "react";
+import Main from './page/Main';
 
 function App(props) {
   return (
     <div className="App">
-      <Header />
-      <main></main>
-      <Footer />
+      <Main/>
     </div>
   );
 }

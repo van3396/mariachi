@@ -25,22 +25,30 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ml-auto">
             <li
-              className={`nav-item ${
-                lang === "en" ? style.langOptions : style.chosenLang
-              }`}
+              className={`nav-item`}
               onClick={onLangChange("es")}
             >
-              English
+              <span
+                className={`nav-link ${
+                  lang === "en" ? style.langOptions : style.chosenLang
+                }`}
+              >
+                English
+              </span>
             </li>
             <li
-              className={`nav-item ${
-                lang === "es" ? style.langOptions : style.chosenLang
-              }`}
+              className={`nav-item`}
               onClick={onLangChange("en")}
             >
-              <span className="nav-link">Espa&ntilde;ol</span>
+              <span
+                className={`nav-link ${
+                  lang === "es" ? style.langOptions : style.chosenLang
+                }`}
+              >
+                Espa&ntilde;ol
+              </span>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="http://www.youtube.com">
