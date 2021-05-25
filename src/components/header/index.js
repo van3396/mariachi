@@ -40,10 +40,7 @@ const Header = () => {
               }`}
               onClick={onLangChange("en")}
             >
-              <span>
-
-              Espa&ntilde;ol
-              </span>
+              <span className="nav-link">Espa&ntilde;ol</span>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="http://www.youtube.com">
