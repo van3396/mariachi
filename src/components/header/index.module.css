@@ -1,0 +1,21 @@
+.headerBgColor {
+  background-color: #d8e3e7;
+}
+
+.youtubeLogo {
+  height: 20px;
+}
+
+.headerBrand {
+  font-family: "Dancing Script";
+}
+
+.langOptions {
+  color: black;
+}
+.chosenLang {
+  color: red;
+}
+
+.title {
+}

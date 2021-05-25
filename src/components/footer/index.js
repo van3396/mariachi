@@ -1,10 +1,12 @@
 import React from "react";
-import "../css-components/Footer.css";
+import style from "./index.module.css"
 import { Container, Row, Col } from "react-bootstrap";
+
+console.log(style)
 
 const Footer = () => {
   return (
-    <footer className="footer-bg-color py-1">
+    <footer className={`${style.footerBgColor} py-1`}>
       <Container className="py-1">
         <Row>
           <Col className="text-center">
