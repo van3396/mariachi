@@ -1,0 +1,8 @@
+.title {
+    font-weight: 600;
+}
+.sample {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
