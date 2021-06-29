@@ -4,7 +4,7 @@ import samplePic from "../../media/images/introduction-placeholder.png";
 
 const index = () => {
   return (
-    <div className="container fluid">
+    <div className="container-fluid">
       <div className="row py-5">
         <div className="col-6 p-1">
           <img className="img-fluid" src={samplePic} alt="" />

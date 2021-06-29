@@ -1,0 +1,21 @@
+.parentDiv {
+  position: relative;
+}
+
+.mainContainer {
+  background-color: #e3e3e3;
+}
+
+.guitarPic {
+  position: absolute;
+  top: -4em;
+  height: 45em;
+  right: 4em;
+  left: 4em;
+  width: 20em
+}
+
+.guitarPic img {
+  height: 100%;
+  margin: 0 auto;
+}

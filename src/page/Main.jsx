@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import InformationLinks from "../components/informationLinks";
 import BookNow from "../components/bookNow"
 import Introduction from "../components/introduction"
+import VideoPlayer from "../components/videoPlayer";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <InformationLinks/>
       <BookNow />
       <Introduction />
+      <VideoPlayer />
       <Footer />
     </>
   );
