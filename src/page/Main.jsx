@@ -6,6 +6,7 @@ import BookNow from "../components/bookNow";
 import Introduction from "../components/introduction";
 import VideoPlayer from "../components/videoPlayer";
 import ServiceList from "../components/serviceList"
+import Description from "../components/description"
 
 const Main = () => {
   return (
@@ -16,6 +17,7 @@ const Main = () => {
       <Introduction />
       <VideoPlayer />
       <ServiceList />
+      < Description />
       <Footer />
     </>
   );
