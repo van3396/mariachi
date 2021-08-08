@@ -1,27 +1,27 @@
 .main {
-  /* background-image: url(../../media/images/mariachi.jpg); */
-  background-size: cover;
-  height: 300px;
-
+  height: 50em;
   background: linear-gradient(
       180deg,
-      rgba(2, 0, 36, 0.5) 0%,
-      rgba(0, 0, 0, 0.459) 2%,
-      rgba(0, 212, 255, 0) 20%
+      rgba(2, 0, 36, 0.74) 0%,
+      rgba(0, 0, 0, 0.616) 10%,
+      rgba(0, 212, 255, 0) 40%
     ),
     url(../../media/images/mariachi.jpg);
+  background-size: cover;
 }
 
 .links {
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 40%;
   margin-left: auto;
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 .links div {
   color: white;
   margin-top: 1.5em;
-  margin-right: 2em;
-  font-size: 1em;
+  margin-right: -1em;
 }

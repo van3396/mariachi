@@ -1,11 +1,26 @@
 #button {
-    border: none;
-    background-color: green;
-    border-radius: 0.75em;
-    color: white;
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 0.25em 0.75em;
-  }
-  
+  border: none;
+  background-color: #366344;
+  border-radius: 0.75em;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.25em 0.75em;
+}
+
+.title h1 {
+  color: #d60000;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.description {
+  color: #707070;
+  font-size: 1.25em;
+}
+
+.description span {
+  color: #000000;
+  font-weight: 600;
+}

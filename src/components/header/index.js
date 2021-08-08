@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import style from "./index.module.css";
+import headerGfx from "../../media/images/header.svg"
+import ytLogo from "../../media/images/youtubelogo.svg"
 
 const Header = () => {
   const [lang, setLang] = useState("en");
   const onLangChange = (lang) => () => setLang(lang);
   console.log(lang);
 
-  const ytLogo =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg2b4AzEL5ltvxPV_DbclqmJhSdtTQgiXmQ_fk-GDlZwsSAhfuhp1hIHoJziYAA-1YRZY&usqp=CAU";
 
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        Mariachi Veracruzano
+      <nav id={style.nav} className="navbar navbar-expand-lg navbar-light bg-light">
+        <img src={headerGfx} className=" mx-5 my-1" alt="logo" height='45em' />
         <button
           className="navbar-toggler"
           type="button"
@@ -51,8 +51,8 @@ const Header = () => {
               </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="http://www.youtube.com">
-                yt logo
+              <a className="nav-link" href="https://www.youtube.com/channel/UCDJ8qtBDbQADa7k4zaFNK0w/videos">
+                <img src={ytLogo} alt="Youtube" height='45em' className='d-block mx-5' />
               </a>
             </li>
           </ul>

@@ -1,0 +1,9 @@
+.row1 p {
+  font-size: 1.5em;
+}
+.row2 {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: .01em;
+}

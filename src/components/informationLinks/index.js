@@ -7,8 +7,8 @@ const index = () => {
         <div className={`${style.main}`}>
             <div className={`${style.links}`}>
                 <div>About Us</div>
-                <div>test1</div>
-                <div>test2</div>
+                <div>services</div>
+                <div>contact us</div>
             </div>
         </div>
     )

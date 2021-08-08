@@ -1,6 +1,7 @@
 import React from "react";
-import { form, callToAction, questionsConcerns } from "./index.module.css";
+import { callToAction, questionsConcerns } from "./index.module.css";
 import cactus from "../../media/images/cactus.svg";
+import ContactForm from "./ContactForm";
 
 const Index = () => {
   return (
@@ -11,7 +12,6 @@ const Index = () => {
             <div className="col-12">
               <img
                 className="d-block mx-auto"
-                width="400"
                 src={cactus}
                 alt=""
               />
@@ -25,19 +25,7 @@ const Index = () => {
         </div>
         <div className="col-4 mx-auto">
           <p id={questionsConcerns}>Contact us with any question or concerns.</p>
-          <form className={form}>
-            <input type="text" placeholder="Enter your name here" />
-            <input type="text" placeholder="Email Address" />
-            <input type="text" placeholder="Phone number" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              placeholder="Message"
-            ></textarea>
-            <button>Submit</button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </div>

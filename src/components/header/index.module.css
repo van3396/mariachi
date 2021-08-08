@@ -12,10 +12,13 @@
 
 .langOptions {
   color: black;
+  font-size: 2em;
 }
 .chosenLang {
   color: red!important;
+  font-size: 2em;
 }
 
-.title {
+#nav{
+  background-color: #E3E3E3 !important;
 }
