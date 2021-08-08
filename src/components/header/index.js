@@ -5,10 +5,7 @@ import ytLogo from "../../media/images/youtubelogo.svg"
 import langHook from '../../hooks/LangSwitcher/index'
 
 const Header = () => {
-  
   const [lang,onLangChange] = langHook()
-  console.log('header==>',lang);
-
   return (
     <header>
       <nav id={style.nav} className="navbar navbar-expand-lg navbar-light bg-light">

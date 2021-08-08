@@ -1,5 +1,6 @@
 import React from "react";
 import Main from './page/Main';
+import { injectContext } from './context/index';
 
 function App(props) {
   return (
@@ -9,4 +10,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default injectContext(App);
