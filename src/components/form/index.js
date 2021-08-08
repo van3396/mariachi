@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 const Index = () => {
   return (
-    <div className="container-fluid p-5" style={{ backgroundColor: "#E3E3E3" }}>
+    <div id='third' className="container-fluid p-5" style={{ backgroundColor: "#E3E3E3" }}>
       <div className="row">
         <div className="col-6">
           <div className="row">

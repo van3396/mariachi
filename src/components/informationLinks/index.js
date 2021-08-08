@@ -6,9 +6,19 @@ const index = () => {
     return (
         <div className={`${style.main}`}>
             <div className={`${style.links}`}>
-                <div>About Us</div>
-                <div>services</div>
-                <div>contact us</div>
+                <div>
+                    <a href="#first">
+                    About Us
+
+                    </a></div>
+                <div>
+                    <a href="#second">
+                    services
+                    </a></div>
+                <div>
+                    <a href="#third">
+                    contact us
+                    </a></div>
             </div>
         </div>
     )

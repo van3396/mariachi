@@ -4,7 +4,7 @@ import samplePic from "../../media/images/groupphoto.png";
 
 const index = () => {
   return (
-    <div className="container-fluid">
+    <div id="first" className="container-fluid">
       <div className="row py-5 m-5">
         <div className="col-6 col-lg-6 col mx-auto">
           <img className="d-block mx-auto" width='100%' src={samplePic} alt="" />

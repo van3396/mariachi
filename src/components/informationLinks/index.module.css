@@ -18,6 +18,24 @@
   text-transform: capitalize;
   font-size: 2em;
   font-weight: 400;
+  color: #fff;
+}
+.links a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.links a:active {
+  text-decoration: none;
+  color: #fff;
+}
+.links a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.links a:visited {
+  text-decoration: none;
+  color: #fff;
 }
 
 .links div {

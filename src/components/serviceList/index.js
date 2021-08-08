@@ -5,7 +5,7 @@ import serviceIcon1 from "../../media/images/serviceIcon1.svg";
 
 const ServiceList = () => {
   return (
-    <div className="container-fluid mt-5 my-5 py-5">
+    <div id='second' className="container-fluid mt-5 my-5 py-5">
       <div className="row">
         <div className="col-4 mx-auto p-0">
           <img className="img-fluid" src={serviceHeader} alt="" />
