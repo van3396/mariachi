@@ -1,27 +1,30 @@
 import React from 'react'
 import style from "./index.module.css";
-// import mariachi from "../../media/images/mariachi.jpg"
+import langHook from '../../hooks/LangSwitcher/index'
 
-const index = () => {
+const Index = () => {
+    const [lang,,switcher] = langHook()
+    console.log(lang);
+
     return (
         <div className={`${style.main}`}>
             <div className={`${style.links}`}>
                 <div>
                     <a href="#first">
-                    About Us
-
+                        {switcher(lang,'About Us', 'spanish')}
                     </a></div>
                 <div>
                     <a href="#second">
-                    services
+                        {switcher(lang,'services', 'spanish')}
                     </a></div>
                 <div>
                     <a href="#third">
-                    contact us
+                        {switcher(lang,'contact us', 'spanish')}
+
                     </a></div>
             </div>
         </div>
     )
 }
 
-export default index
+export default Index

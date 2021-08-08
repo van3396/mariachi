@@ -3,8 +3,6 @@ import style from "./index.module.css"
 import { Container, Row, Col } from "react-bootstrap";
 import linkedin from '../../media/images/linkedingif.gif'
 
-console.log(style)
-
 const Footer = () => {
   return (
     <footer className={`${style.footer} py-5`}>

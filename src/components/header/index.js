@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./index.module.css";
 import headerGfx from "../../media/images/header.svg"
 import ytLogo from "../../media/images/youtubelogo.svg"
+import langHook from '../../hooks/LangSwitcher/index'
 
 const Header = () => {
-  const [lang, setLang] = useState("en");
-  const onLangChange = (lang) => () => setLang(lang);
-  console.log(lang);
-
+  
+  const [lang,onLangChange] = langHook()
+  console.log('header==>',lang);
 
   return (
     <header>
@@ -28,11 +28,11 @@ const Header = () => {
           <ul className="navbar-nav ml-auto">
             <li
               className={`nav-item`}
-              onClick={onLangChange("es")}
+              onClick={onLangChange("en")}
             >
               <span
                 className={`nav-link ${
-                  lang === "en" ? style.langOptions : style.chosenLang
+                  lang === "es" ? style.langOptions : style.chosenLang
                 }`}
               >
                 English
@@ -40,11 +40,11 @@ const Header = () => {
             </li>
             <li
               className={`nav-item`}
-              onClick={onLangChange("en")}
+              onClick={onLangChange("es")}
             >
               <span
                 className={`nav-link ${
-                  lang === "es" ? style.langOptions : style.chosenLang
+                  lang === "en" ? style.langOptions : style.chosenLang
                 }`}
               >
                 Espa&ntilde;ol
