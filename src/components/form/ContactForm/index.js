@@ -8,7 +8,7 @@ import { form } from "../index.module.css";
 function ContactForm() {
   const [state, handleSubmit] = useForm("moqykzjy");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <p>Thanks for Contacting Us!</p>;
   }
   return (
       <form className={form} onSubmit={handleSubmit}>

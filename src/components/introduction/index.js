@@ -1,6 +1,6 @@
 import React from "react";
 import { title, sample } from "./index.module.css";
-import samplePic from "../../media/images/groupphoto.png";
+import samplePic from "../../media/images/isapro.jpeg";
 
 const index = () => {
   return (
