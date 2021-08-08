@@ -9,15 +9,15 @@ const Index = () => {
             <div className={`${style.links}`}>
                 <div>
                     <a href="#first">
-                        {switcher('About Us', 'spanish')}
+                        {switcher('About Us', 'Sobre nosotros')}
                     </a></div>
                 <div>
                     <a href="#second">
-                        {switcher('services', 'spanish')}
+                        {switcher('services', 'servicios')}
                     </a></div>
                 <div>
                     <a href="#third">
-                        {switcher('contact us', 'spanish')}
+                        {switcher('contact us', 'Contacta con nosotros')}
                     </a></div>
             </div>
         </div>

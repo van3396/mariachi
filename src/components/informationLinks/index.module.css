@@ -13,7 +13,7 @@
 .links {
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 60%;
   margin-left: auto;
   text-transform: capitalize;
   font-size: 2em;
