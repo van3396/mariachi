@@ -10,13 +10,13 @@ const VideoPlayer = () => {
           <div className="col-8 py-4">
             <iframe
               className="mx-auto d-block rounded"
-              width="900"
+              width="100%"
               height="500"
-              src="https://www.youtube.com/embed/ZluYZedSMjQ"
+              src="https://www.youtube.com/embed/LN3RuFdgcNc"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="col-4">

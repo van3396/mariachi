@@ -1,17 +1,19 @@
 import React from "react";
-import { form, callToAction, questionsConcerns } from "./index.module.css";
+import { callToAction, questionsConcerns } from "./index.module.css";
 import cactus from "../../media/images/cactus.svg";
+import ContactForm from "./ContactForm";
+import langHook from '../../hooks/LangSwitcher/index'
 
 const Index = () => {
+  const [,,switcher] = langHook();
   return (
-    <div className="container-fluid p-5" style={{ backgroundColor: "#E3E3E3" }}>
+    <div id='third' className="container-fluid p-5" style={{ backgroundColor: "#E3E3E3" }}>
       <div className="row">
         <div className="col-6">
           <div className="row">
             <div className="col-12">
               <img
                 className="d-block mx-auto"
-                width="400"
                 src={cactus}
                 alt=""
               />
@@ -19,25 +21,14 @@ const Index = () => {
           </div>
           <div className="row">
             <div className="col-9 mx-auto text-center mt-3">
-              <h1 id={callToAction}>We are ready to celebrate with you!</h1>
+              <h1 id={callToAction}>{switcher(`We are ready to celebrate with you!`,`¡Estamos listos para celebrar contigo!`)}</h1>
             </div>
           </div>
         </div>
         <div className="col-4 mx-auto">
-          <p id={questionsConcerns}>Contact us with any question or concerns.</p>
-          <form className={form}>
-            <input type="text" placeholder="Enter your name here" />
-            <input type="text" placeholder="Email Address" />
-            <input type="text" placeholder="Phone number" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              placeholder="Message"
-            ></textarea>
-            <button>Submit</button>
-          </form>
+          <p id={questionsConcerns}>
+          {switcher(`Contact us with any question or concerns.`,`Contáctenos con cualquier pregunta o inquietud.`)}</p>
+          <ContactForm />
         </div>
       </div>
     </div>
